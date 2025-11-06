@@ -1,0 +1,554 @@
+<app-header></app-header>
+<section class="hero-section py-5">
+  <div class="container">
+    <div class="row align-items-center">
+      <!-- Left Text -->
+      <div class="col-lg-7 mb-4 mb-lg-0">
+        <h1 class="fw-bold display-5 mb-4">
+          Get <span class="text-primary">AI-ready</span> with a modern tech stack.
+        </h1>
+        <p class="lead mb-4">
+          Our Tech Advisory & Implementation firm upgrades your legacy tech stack,
+          so you can innovate your business processes and products with AI.
+        </p>
+        <div class="d-flex flex-wrap gap-3">
+          <a href="#" class="btn btn-primary rounded-pill px-4 py-2">
+            Book Free Strategy Call
+          </a>
+          <a href="#" class="btn btn-outline-dark rounded-pill px-4 py-2">
+            AI Readiness Assessment <span class="ms-2">&rarr;</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Right Dynamic Bootstrap Slider -->
+      <div class="col-lg-5 position-relative">
+        <div id="infoCardCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
+          <div class="carousel-inner">
+            <div *ngFor="let card of cards; let i = index" class="carousel-item" [class.active]="i === 0">
+              <div class="info-card shadow-sm p-4 bg-white rounded-4 position-relative">
+                <p class="fw-semibold mb-3 text-decoration-underline text-dark">
+                  {{ card.highlight }}
+                </p>
+
+                <div *ngFor="let stat of card.stats" class="mb-3 p-3 rounded-3"
+                  [ngStyle]="{ 'background-color': stat.color }">
+                  <h4 class="fw-bold mb-1" [ngClass]="stat.textColor">{{ stat.value }}</h4>
+                  <p class="mb-0 small fw-semibold">{{ stat.text }}</p>
+                </div>
+
+                <a href="#" class="btn btn-dark rounded-pill px-4">
+                  See How <span class="ms-2">&rarr;</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Left & Right Orange Circle Buttons in the Middle -->
+          <button class="carousel-control-prev custom-carousel-btn" type="button" data-bs-target="#infoCardCarousel"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+
+          <button class="carousel-control-next custom-carousel-btn" type="button" data-bs-target="#infoCardCarousel"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="approach-section py-5 position-relative">
+  <div class="container position-relative">
+    <!-- Section Title -->
+    <div class="section-title-wrapper mb-5">
+      <h6 class="text-uppercase fw-bold text-warning mb-3">Our Approach</h6>
+      <h2 class="section-heading">
+        <span class="bold-span"><B>Untangle your technology stack </B></span> <span class="font-small">through our
+        </span>
+        <span class="bold-span"><b>tech-forward strategies </b></span> <span class="font-small">and </span>
+        <span class="bold-span"><b>systematic execution</b></span>
+      </h2>
+    </div>
+
+    <!-- Video Section with White Background -->
+    <div class="approach-video-container bg-white rounded-4 shadow-sm py-3 px-3 mx-auto">
+      <video playsinline muted autoplay loop class="approach-video w-100 rounded-4">
+        <source src="/our_approach_final.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
+
+    <!-- Button (Left-aligned under video) -->
+    <div class="pt-4 text-start video-btn-wrapper">
+      <a href="#" class="btn btn-warning text-white rounded-pill px-4 py-2 fw-semibold">
+        Book Free Strategy Call
+        <span class="ms-2">➜</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+<section class="trust-section py-5">
+  <div class="container text-center">
+    <!-- Heading -->
+    <h2 class="fw-bold mb-5">
+      There is a reason our clients trust us...
+    </h2>
+
+    <!-- Stats Row -->
+    <div class="row justify-content-center gy-4 gx-4">
+      <!-- Stat Box -->
+      <div class="col-6 col-md-2">
+        <div class="stat-box p-4 rounded-4 shadow-sm bg-white">
+          <h3 class="text-orange fw-bold display-6 mb-1">360+</h3>
+          <p class="matrix-text">Successful Projects</p>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-2">
+        <div class="stat-box p-4 rounded-4 shadow-sm bg-white">
+          <h3 class="text-orange fw-bold display-6 mb-1">500+</h3>
+          <p class="matrix-text">Global Team Members</p>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-2">
+        <div class="stat-box p-4 rounded-4 shadow-sm bg-white">
+          <h3 class="text-orange fw-bold display-6 mb-1">90%</h3>
+          <p class="matrix-text">Client Retention</p>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-2">
+        <div class="stat-box p-4 rounded-4 shadow-sm bg-white">
+          <h3 class="text-orange fw-bold display-6 mb-1">10+</h3>
+          <p class="matrix-text">Years in Business</p>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-2">
+        <div class="stat-box p-4 rounded-4 shadow-sm bg-white">
+          <h3 class="text-orange fw-bold display-6 mb-1">2024</h3>
+          <p class="matrix-text">Recognized by Gartner</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="modernize-section py-5">
+  <div class="container text-center">
+    <!-- Title -->
+    <h2 class="fw-bold mb-2">
+      Modernize your Tech Stack with <span class="text-orange">thinkbridge.</span>
+    </h2>
+    <p class="text-muted mb-5">
+      From strategy to execution to maintenance our team can handle it all.
+    </p>
+
+    <!-- Feature Cards -->
+    <div class="row g-4 justify-content-center">
+      <!-- Card 1 -->
+      <div class="col-md-4">
+        <div class="feature-card bg-light-purple rounded-4 p-4 shadow-sm h-100">
+          <span class="badge bg-purple mb-3">THINK BIGGER</span>
+          <div class="icon mb-3">
+            <img src="/np_discussing-ideas.svg" alt="Digital Strategy" width="50" height="50" />
+          </div>
+          <h5 class="fw-semibold">Digital Strategy</h5>
+          <p class="text-muted small">Think bigger with tech-forward strategies</p>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="col-md-4">
+        <div class="feature-card bg-light-orange rounded-4 p-4 shadow-sm h-100">
+          <span class="badge bg-orange mb-3">MOVE FASTER</span>
+          <div class="icon mb-3">
+            <img src="/Vector.svg" alt="Digital Transformation" width="50" height="50" />
+          </div>
+          <h5 class="fw-semibold">Digital Transformation</h5>
+          <p class="text-muted small">Move faster with digital transformation</p>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="col-md-4">
+        <div class="feature-card bg-light-gray rounded-4 p-4 shadow-sm h-100">
+          <span class="badge bg-dark-gray mb-3">GO FURTHER</span>
+          <div class="icon mb-3">
+            <img src="/np_transformation.svg" alt="Digital Operations" width="50" height="50" />
+          </div>
+          <h5 class="fw-semibold">Digital Operations</h5>
+          <p class="text-muted small">Go further with Digital Ops</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Section -->
+    <div class="row align-items-center mt-5 text-start">
+      <!-- Left Text -->
+      <div class="col-md-6 mb-4 mb-md-0">
+        <h4 class="fw-bold mb-3">We keep your systems running flawlessly</h4>
+        <p class="text-muted mb-4">
+          We partner with our clients to operationalize their digital transformation and keep their
+          tech stack and applications working in top shape. Our 99.99% uptime guarantee says it all.
+        </p>
+        <a href="#" class="btn btn-dark-purple rounded-pill px-4 py-2 fw-semibold">
+          Learn More
+        </a>
+      </div>
+
+      <!-- Right Image -->
+      <div class="col-md-6">
+        <div class="image-box rounded-4 overflow-hidden shadow-sm position-relative">
+          <img src="/AdobeStock.webp" alt="Digital Operations" class="img-fluid w-100" />
+          <div class="tag-container position-absolute bottom-0 start-0 p-3 d-flex flex-wrap gap-2">
+            <span class="badge bg-light text-dark px-3 py-2">SECURITY & COMPLIANCE</span>
+            <span class="badge bg-light text-dark px-3 py-2">DEVOPS & PLATFORM ENGINEERING</span>
+            <span class="badge bg-light text-dark px-3 py-2">ML OPS</span>
+            <span class="badge bg-light text-dark px-3 py-2">24x7 APPLICATION MONITORING</span>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- Left Text -->
+        <div class="col-md-6 mb-4 mb-md-0">
+          <h2 class="fw-bold mb-3">
+            Modernize your software applications without disruption
+          </h2>
+          <p class="text-muted mb-4">
+            We partner with growth stage companies in building their differentiators and
+            modernizing their applications. We help organizations to buy and integrate
+            best in class business applications for frictionless business operations.
+          </p>
+          <a href="#" class="btn btn-dark-purple rounded-pill px-4 py-2 fw-semibold">
+            Learn More
+          </a>
+        </div>
+
+        <!-- Right Image (Styled Box with Tags) -->
+        <div class="col-md-6">
+          <div class="image-box rounded-4 overflow-hidden shadow-sm position-relative">
+            <img src="/66f0fd74f8041f0350982fda_AdobeStock_425671164-min-p-1080.webp" alt="Modernize Software"
+              class="img-fluid w-100" />
+            <div class="tag-container position-absolute bottom-0 start-0 p-3 d-flex flex-wrap gap-2">
+              <span class="badge bg-light text-dark px-3 py-2">BUSINESS APPLICATIONS</span>
+              <span class="badge bg-light text-dark px-3 py-2">ERP & CRM INTEGRATION</span>
+              <span class="badge bg-light text-dark px-3 py-2">SCALABLE ARCHITECTURE</span>
+              <span class="badge bg-light text-dark px-3 py-2">CLOUD MODERNIZATION</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- Left Text -->
+        <div class="col-md-6 mb-4 mb-md-0">
+          <h2 class="fw-bold mb-3">
+            Modernize your software applications without disruption
+          </h2>
+          <p class="text-muted mb-4">
+            We partner with growth stage companies in building their differentiators and
+            modernizing their applications. We help organizations to buy and integrate
+            best in class business applications for frictionless business operations.
+          </p>
+          <a href="#" class="btn btn-dark-purple rounded-pill px-4 py-2 fw-semibold">
+            Learn More
+          </a>
+        </div>
+
+        <!-- Right Image (Styled Box with Tags) -->
+        <div class="col-md-6">
+          <div class="image-box rounded-4 overflow-hidden shadow-sm position-relative">
+            <img src="/66f0fd75da0e9c1cdae93286_AdobeStock_54.webp" alt="Modernize Software" class="img-fluid w-100" />
+            <div class="tag-container position-absolute bottom-0 start-0 p-3 d-flex flex-wrap gap-2">
+              <span class="badge bg-light text-dark px-3 py-2">BUSINESS APPLICATIONS</span>
+              <span class="badge bg-light text-dark px-3 py-2">ERP & CRM INTEGRATION</span>
+              <span class="badge bg-light text-dark px-3 py-2">SCALABLE ARCHITECTURE</span>
+              <span class="badge bg-light text-dark px-3 py-2">CLOUD MODERNIZATION</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- //Free webinar-section -->
+<section class="webinar-section py-5">
+  <div class="container">
+    <div class="row align-items-center">
+      <!-- Left content -->
+      <div class="col-lg-6 mb-4 mb-lg-0">
+        <div class="text-content">
+          <h6 class="text-uppercase text-orange fw-bold mb-3">Free Webinar</h6>
+          <h2 class="fw-bold mb-3">
+            How to have a tech-forward business
+          </h2>
+          <p class="text-muted mb-4">
+            That will actually increase your bottom line.
+          </p>
+          <button class="btn btn-orange px-4 py-2">
+            Watch Free Webinar →
+          </button>
+        </div>
+      </div>
+
+      <!-- Right image + overlay content -->
+      <div class="col-lg-6">
+        <div class="image-box position-relative rounded-4 overflow-hidden shadow-sm">
+          <img src="/67daaddebedaf504c2ab9d25_6733644d6eb52911a0c57a89_Frame 1484581993 (1) (1).webp" alt="Webinar"
+            class="img-fluid w-100 rounded-4" />
+
+          <div class="overlay-content d-flex flex-column justify-content-between p-4 rounded-3">
+            <h3 class="overlay-text mb-3">
+              <span class="bold-span-orange">
+                <strong>think</strong>bridge
+              </span>
+              <br />
+              helped us develop our technology strategy, built our platform, and continue to do a stellar job iterating
+              and keeping our stack running in great shape.
+            </h3>
+
+            <div class="d-flex align-items-center justify-content-start gap-3 mt-3">
+              <span class="white-text fw-medium">Bill Klein, President</span>
+              <div class="divider"></div>
+              <img src="/67336da7c395f29e2f567e1e_Consero_Logo_dark 1.svg" alt="Consero Logo" height="26"
+                class="logo" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- next section for discover market companies -->
+
+<section class="comparison-section py-5">
+  <div class="container text-center">
+    <!-- Heading -->
+    <h2 class="fw-bold mb-3">
+      Discover how <span class="text-orange">thinkbridge</span> delivers for
+      <br />
+      growing mid-market companies
+    </h2>
+    <p class="text-muted mb-5">
+      Tailored solutions, “No-fluff” approach, domain expertise & full-service
+      technology offerings
+    </p>
+
+    <!-- Comparison Table -->
+    <div class="table-responsive">
+      <table class="table comparison-table align-middle text-start">
+        <thead>
+          <tr>
+            <th class="col-feature"></th>
+            <th>Big name consulting firms</th>
+            <th class="highlight">thinkbridge</th>
+            <th>Freelance marketplaces & dev shops</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Mid-market</strong> expertise and experience</td>
+            <td><i class="bi bi-x-circle text-danger fs-5"></i></td>
+            <td class="highlight"><i class="bi bi-check-circle-fill text-success fs-5"></i></td>
+            <td><i class="bi bi-x-circle text-danger fs-5"></i></td>
+          </tr>
+          <tr>
+            <td>
+              <strong>Breadth of offering</strong> from strategy to execution<br />
+              <small class="text-muted">to operational support</small>
+            </td>
+            <td><i class="bi bi-check-circle text-success fs-5"></i></td>
+            <td class="highlight"><i class="bi bi-check-circle-fill text-success fs-5"></i></td>
+            <td><i class="bi bi-x-circle text-danger fs-5"></i></td>
+          </tr>
+          <tr>
+            <td><strong>Outcome based</strong> pricing / Guaranteed ROI</td>
+            <td><i class="bi bi-x-circle text-danger fs-5"></i></td>
+            <td class="highlight"><i class="bi bi-check-circle-fill text-success fs-5"></i></td>
+            <td><i class="bi bi-x-circle text-danger fs-5"></i></td>
+          </tr>
+          <tr>
+            <td><strong>Accelerators</strong> tailored for the mid-market</td>
+            <td><i class="bi bi-x-circle text-danger fs-5"></i></td>
+            <td class="highlight"><i class="bi bi-check-circle-fill text-success fs-5"></i></td>
+            <td><i class="bi bi-x-circle text-danger fs-5"></i></td>
+          </tr>
+          <tr>
+            <td>
+              <strong>Global talent</strong> with multi time zone coverage
+            </td>
+            <td><i class="bi bi-x-circle text-danger fs-5"></i></td>
+            <td class="highlight"><i class="bi bi-check-circle-fill text-success fs-5"></i></td>
+            <td><i class="bi bi-x-circle text-danger fs-5"></i></td>
+          </tr>
+          <tr>
+            <td><strong>Dedicated</strong> client management</td>
+            <td><i class="bi bi-x-circle text-danger fs-5"></i></td>
+            <td class="highlight"><i class="bi bi-check-circle-fill text-success fs-5"></i></td>
+            <td><i class="bi bi-x-circle text-danger fs-5"></i></td>
+          </tr>
+          <tr class="pricing-row">
+            <td></td>
+            <td>Premium Prices <span class="fw-bold">$$$$</span></td>
+            <td class="highlight fw-bold">Fixed Cost, Predictable Pricing $$</td>
+            <td>Hourly <span class="fw-bold">$</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+
+<!-- Who Section -->
+<section class="who-section text-center py-5">
+  <div class="container">
+    <h2 class="hashtag">WHO?</h2>
+    <p class="who-desc">
+      Every executive has their own unique challenges and priorities.
+      We help bring them all together.
+    </p>
+
+    <div class="row justify-content-center align-items-stretch">
+      <!-- Card 1 -->
+      <div class="col-md-4 mb-4">
+        <div class="who-image-box">
+          <div class="image-wrapper">
+            <img src="/647f2ac4296b2ca93c3bead2_CEO.svg" alt="CEO/PRESIDENT" class="img-fluid" />
+            <div class="who-title">CEO/PRESIDENT</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="col-md-4 mb-4">
+        <div class="who-image-box">
+          <div class="image-wrapper">
+            <img src="/647f2ac4296b2ca93c3bead0_CTO.svg" alt="CTO" class="img-fluid" />
+            <div class="who-title">CTO</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="col-md-4 mb-4">
+        <div class="who-image-box">
+          <div class="image-wrapper">
+            <img src="/647f2ac4296b2ca93c3bead1_COO.svg" alt="COO/CSO/CFO" class="img-fluid" />
+            <div class="who-title">COO/CSO/CFO</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- What section   -->
+
+<section class="what-section py-5">
+  <div class="container text-center">
+
+    <!-- Title -->
+    <div class="globe-headin-wrps mb-5">
+      <h2 class="hashtag text-start mb-2">WHAT</h2>
+      <div class="section-heading-h2 light-black font-48px mt-3">
+        You don’t have to choose between
+        <span class="text-span-48"> cost, quality or speed.</span><br />
+        We help eliminate friction and
+        <span class="text-span-48">
+          go to market quickly without the cost-quality-speed compromise.
+        </span>
+      </div>
+    </div>
+
+    <!-- Slider -->
+    <div
+      id="whatSlider"
+      class="carousel slide"
+      data-bs-ride="carousel"
+      data-bs-interval="4000"
+    >
+      <div class="carousel-inner">
+
+        <!-- Slide 1 -->
+        <div class="carousel-item active">
+          <div class="slide-wrapper">
+            <img src="/66827fde0d9613fbf380d39a_AdobeStock_what.png" alt="wave" class="wave-bg" />
+            <div class="slide-text">
+              Stuck between the limitless costs of big consulting firms<br />
+              and the limited capabilities of dev shops?
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="carousel-item">
+          <div class="slide-wrapper">
+            <img src="/66827fde0d9613fbf380d39a_AdobeStock_what.png" alt="wave" class="wave-bg" />
+            <div class="slide-text">
+              Struggling to build your engineering team<br />
+              while trying to meet aggressive release timelines?
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="carousel-item">
+          <div class="slide-wrapper">
+            <img src="/66827fde0d9613fbf380d39a_AdobeStock_what.png" alt="wave" class="wave-bg" />
+            <div class="slide-text">
+              Struggling to ship quality software<br />
+              on time, every time?
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Indicators (left bottom) -->
+      <div class="carousel-indicators custom-indicators">
+        <button type="button" data-bs-target="#whatSlider" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#whatSlider" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#whatSlider" data-bs-slide-to="2"></button>
+      </div>
+
+      <!-- Square Controls (right bottom) -->
+      <button
+        class="carousel-control-prev square-btn"
+        type="button"
+        data-bs-target="#whatSlider"
+        data-bs-slide="prev"
+      >
+        <span class="arrow-text">&#10094;</span>
+      </button>
+      <button
+        class="carousel-control-next square-btn"
+        type="button"
+        data-bs-target="#whatSlider"
+        data-bs-slide="next"
+      >
+        <span class="arrow-text">&#10095;</span>
+      </button>
+    </div>
+  </div>
+</section>
+
+
+
+

@@ -1,0 +1,44 @@
+.navbar {
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  letter-spacing: 0.5px;
+}
+
+.nav-link {
+  color: #333 !important;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #f37021 !important;
+}
+
+.btn-primary {
+  background-color: #f37021;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #d85e12;
+}
+
+.contact-btn {
+  font-weight: 600;
+}
+
+.dropdown-menu {
+  border-radius: 0.5rem;
+  border: none;
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.1);
+}
+
+.navbar-toggler {
+  border: none;
+}
+.bridge{
+    font-weight: 400;
+}
